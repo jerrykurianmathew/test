@@ -1,0 +1,47 @@
+<!-- Page Heading -->
+
+<!-- DataTales Example -->
+<div class="card shadow mb-4">
+    <!-- <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+    </div> -->
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable"  datatable="ng" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Current Market Price</th>
+                        <th>Market Cap</th>
+                        <th>Stock P/E</th>
+                        <th>Dividend Yield</th>
+                        <th>ROCE %</th>
+                        <th>ROE Previous Annum</th>
+                        <th>Debt to Equity</th>
+                        <th>EPS</th>
+                        <th>Reserves</th>
+                        <th>Debt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr ng-if ="!details">
+                        <td colspan="6" class="text-center">No Records</td>
+                    </tr> -->
+                    <tr ng-repeat ="row in details">
+                        <td>{{row.name}}</td>
+                        <td>{{row.current_market_price}}</td>
+                        <td>{{row.market_cap}}</td>
+                        <td>{{row.stock_pe}}</td>
+                        <td>{{row.dividend_yield}}</td>
+                        <td>{{row.roce}}</td>
+                        <td>{{row.roe_previous_annum}}</td>
+                        <td>{{row.debt_to_equity}}</td>
+                        <td>{{row.eps}}</td>
+                        <td>{{row.reserves}}</td>
+                        <td>{{row.debt}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

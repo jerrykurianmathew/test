@@ -1,0 +1,42 @@
+<div class="card o-hidden border-0 shadow-lg my-5">
+    <div class="card-body p-0">
+        <!-- Nested Row within Card Body -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="p-5">
+                    <div class="text-center">
+                        <h1 class="h4 text-gray-900 mb-4">Enter Data!</h1>
+                    </div>
+                    <form class="user" name="user" ng-submit="submitForm(user.$valid)" novalidate>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-user" name="name"
+                                placeholder="Name" ng-model="list.name" required>
+                                <p ng-show="user.name.$invalid && !user.name.$pristine" class="help-block">Your name is required.</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" class="form-control form-control-user" name="mobile"
+                                placeholder="Mobile No." ng-model="list.mobile" required ng-minlength="10" ng-maxlength="10">
+                                <p ng-show="user.mobile.$error.minlength||user.mobile.$error.maxlength||user.mobile.$error.number" class="help-block">Mobile number is invalid.</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-user" name="place"
+                                placeholder="Place" ng-model="list.place">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control form-control-user" name="email"
+                                placeholder="Email Address" ng-model="list.email">
+                            <p ng-show="user.email.$invalid && !user.email.$pristine" class="help-block">Enter a valid email.</p>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-user btn-block" ng-disabled="user.$invalid">
+                            Save Details
+                        </button>
+                        <hr>
+                    </form>
+                    <div class="col-lg-12 col-sm-12 col-xs-12 alert alert-success" ng-show="successMessagebool ">
+                        <strong>{{successMessage }}</strong>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
