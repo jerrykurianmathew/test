@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Sales and Invertory Management System">
     <meta name="author" content="Jerry">
-    <title>Contact Manager</title>
+    <title>Test App</title>
 
     <!-- Custom fonts for this template-->
     <link
